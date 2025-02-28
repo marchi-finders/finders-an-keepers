@@ -142,3 +142,7 @@ Total de profissionais sem ficha: 0
 Início do processo: 2025-02-28 11:32:40
 Total de profissionais sem ficha: 0
 ------------------------------
+
+Início do processo: 2025-02-28 12:41:06
+Total de profissionais sem ficha: 14
+------------------------------

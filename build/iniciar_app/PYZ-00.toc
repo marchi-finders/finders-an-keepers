@@ -1,0 +1,3 @@
+('C:\\Users\\vmarc\\OneDrive\\Área de '
+ 'Trabalho\\new-finder\\build\\iniciar_app\\PYZ-00.pyz',
+ [])

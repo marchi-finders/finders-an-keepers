@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Nomes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style2.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/group-1.ico') }}">
+</head>
+<body>
+
+    <div class="tela">
+        <video class="video-fundo" autoplay loop muted>
+            <source src="{{ url_for('static', filename='video/Cyberpunk 2077 - Main Menu BG Loop.mp4') }}" type="video/mp4">
+        </video>        
+    </div>
+
+    <h1 class="h1">Adicione os Nomes</h1>
+
+    <!-- Formulário para enviar os nomes -->
+    <form action="/adicionar_nomes" method="POST">
+        <textarea class="formulario" name="nomes" rows="10" cols="30" placeholder="Digite ou cole os nomes aqui..."></textarea>
+        <br>
+        <button class="botao" type="submit">Adicionar</button>
+    </form>
+
+    <form class="myButton" action="/rodar_script" method="POST">
+        <button type="submit" class="myButton" >Prossiga</button>
+    </form>
+    
+    <form action="/limpar_arquivos" method="POST">
+        <button type="submit" class="limpeza">Limpar Nomes</button>
+    </form>
+
+    <!--<div class="myButton">
+        <a href="/rodar_script" methods="GET">prossiga</a>
+    </div>
+
+</body>
+</html>

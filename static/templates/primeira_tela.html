@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The finder</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/group-1.ico') }}">
+    </head>
+    <body>
+
+        <main>
+            
+            <div class="fundo">
+                <video class="video-fundo" autoplay loop muted>
+                    <source src="{{ url_for('static', filename='video/Cyberpunk 2077 - Main Menu BG Loop.mp4') }}" type="video/mp4">
+                </video>    
+            </div>
+
+            <div class="logo">
+                <img class="finder" src="{{ url_for('static', filename='images/text.png') }}" alt="logo aqui">
+            </div>
+            <div class="botao">
+                <a href="/segunda">pressione_para_entrar</a>
+            </div>
+
+            <script>
+                document.getElementById('botao').addEventListener('click', function() {
+                    // Redirecionar para a URL desejada
+                    window.location.href = 'segunda_tela.html'; // Substitua pelo caminho da sua outra tela
+                });
+            </script>
+
+        </main>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+    display: flex;
+}
+
+.video-fundo {
+    width: 1915px;
+    height: 915px;
+    object-fit: cover;
+}
+
+h1 {
+    position: absolute;
+    top: 11%;
+    left: 41%;
+    font-family: "Play", serif;
+    color: #FF2442;
+}
+
+.formulario {
+    position: absolute;
+    top: 25%;
+    left: 39%;
+    width: 400px;
+    height: 600px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #FF2442;
+    font-family: "Play", serif;
+    color: white;
+    font-size: large;
+}
+
+.formulario::placeholder {
+    color: #FF2442;
+    font-size: large;
+}
+
+.botao {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-family: "Play", serif;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    font-weight: 600;
+    color: #FF2442;
+    border: 1px solid #FF2442;
+    width: 275px;
+    height: 53px;
+}
+
+.myButton {
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    font-family: "Play", serif;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    font-weight: 600;
+    color: #FF2442;
+    border: 1px solid #FF2442;
+    width: 275px;
+    height: 53px;
+}
+
+.myButton button {
+    position: absolute;
+    top: -104%;
+    left: -32%;
+    font-family: "Play", serif;
+    margin-left: 32%;
+    margin-top: 20%;
+    font-size: 25px;
+    font-weight: 600;
+    color: #FF2442;
+    border: 1px solid #FF2442;
+    width: 275px;
+    height: 53px;
+}
+
+.limpeza {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    font-family: "Play", serif;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 25px;
+    font-weight: 600;
+    color: #FF2442;
+    border: 1px solid #FF2442;
+    width: 275px;
+    height: 53px;
+}

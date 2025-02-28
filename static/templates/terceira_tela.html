@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profissionais Sem Ficha</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style3.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/group-1.ico') }}">
+</head>
+</head>
+<body>
+    <div>
+        <img class="imagem-fundo" src="{{ url_for('static', filename='images/fundo4.jpg') }}" alt="">
+    </div>
+    <h2 class="texto">Profissionais Sem Ficha</h2>
+
+    <ul class="texto-profissional">
+        {% for nome in profissionais_sem_ficha %}
+            <li>{{ nome }}</li>  <!-- Exibe cada nome como um item da lista -->
+        {% endfor %}
+    </ul>
+
+    <div>
+        <a href="{{ url_for('segunda') }}">
+            <button type="button">Voltar</button>
+        </a>
+    </div>
+
+</body>
+</html>

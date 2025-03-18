@@ -10,6 +10,8 @@ app = Flask(__name__, template_folder=r'C:/Users/vmarc/OneDrive/Área de Trabalh
 # Caminho para o arquivo de nomes
 CAMINHO_ARQUIVO = r'C:/Users/vmarc/OneDrive/Área de Trabalho/new-finder/nomes.txt'
 CAMINHO_SCRIPT = r'C:/Users/vmarc/OneDrive/Área de Trabalho/new-finder/buscar_psicologos.py'
+CAMINHO_SCRIPT_FISIO = r'C:/Users/vmarc/OneDrive/Área de Trabalho/new-finder/buscar_fisio.py'
+CAMINHO_SCRIPT_NUTRI = r'C:/Users/vmarc/OneDrive/Área de Trabalho/new-finder/buscar_nutricionistas.py'
 
 # Função para adicionar os nomes ao arquivo
 def adicionar_nomes_ao_arquivo(nomes):
@@ -61,6 +63,24 @@ if __name__ == '__main__':
     if not os.path.exists(CAMINHO_ARQUIVO):
         with open(CAMINHO_ARQUIVO, 'w', encoding='utf-8'):
             pass  
+
+@app.route('/pesquisar_fisioterapeutas', methods=['POST'])
+def pesquisar_fisioterapeutas():
+    print(f"Usando Python: {sys.executable}")
+    try:
+        subprocess.run([sys.executable, CAMINHO_SCRIPT_FISIO], capture_output=True, text=True, check=True)
+        return redirect(url_for('resultado'))
+    except subprocess.CalledProcessError as e:
+        return f"Erro ao executar o script de fisioterapeutas:\n{e.stderr or e.output}"
+
+@app.route('/pesquisar_nutricionistas', methods=['POST'])
+def pesquisar_nutricionistas():
+    print(f"Usando Python: {sys.executable}")
+    try:
+        subprocess.run([sys.executable, CAMINHO_SCRIPT_NUTRI], capture_output=True, text=True, check=True)
+        return redirect(url_for('resultado'))
+    except subprocess.CalledProcessError as e:
+        return f"Erro ao executar o script de nutricionistas:\n{e.stderr or e.output}"
 
 @app.route('/resultado')
 def resultado():

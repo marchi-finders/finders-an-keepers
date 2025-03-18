@@ -23,7 +23,15 @@ h1 {
     top: 11%;
     left: 41%;
     font-family: "Play", serif;
-    color: #FF2442;
+    color: #16FEFF;
+}
+
+h2 {
+    position: absolute;
+    top: 16%;
+    left: 24%;
+    font-family: "Play", serif;
+    color: #16FEFF;
 }
 
 .formulario {
@@ -36,27 +44,27 @@ h1 {
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, 0.3);
-    border: 1px solid #FF2442;
+    border: 1px solid #F2D8F3;
     font-family: "Play", serif;
     color: white;
     font-size: large;
 }
 
 .formulario::placeholder {
-    color: #FF2442;
+    color: #F3C13A;
     font-size: large;
 }
 
 .botao {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 20%;
     font-family: "Play", serif;
     background: rgba(0, 0, 0, 0.3);
     font-size: 25px;
     font-weight: 600;
-    color: #FF2442;
-    border: 1px solid #FF2442;
+    color: #F3C13A;
+    border: 1px solid #F3C13A;
     width: 275px;
     height: 53px;
 }
@@ -69,8 +77,8 @@ h1 {
     background: rgba(0, 0, 0, 0.3);
     font-size: 25px;
     font-weight: 600;
-    color: #FF2442;
-    border: 1px solid #FF2442;
+    color: #16FEFF;
+    border: 1px solid #16FEFF;
     width: 275px;
     height: 53px;
 }
@@ -84,8 +92,8 @@ h1 {
     margin-top: 20%;
     font-size: 25px;
     font-weight: 600;
-    color: #FF2442;
-    border: 1px solid #FF2442;
+    color: #16FEFF;
+    border: 1px solid #16FEFF;
     width: 275px;
     height: 53px;
 }
@@ -98,8 +106,36 @@ h1 {
     background: rgba(0, 0, 0, 0.3);
     font-size: 25px;
     font-weight: 600;
-    color: #FF2442;
-    border: 1px solid #FF2442;
+    color: #EA7F87;
+    border: 1px solid #EA7F87;
+    width: 275px;
+    height: 53px;
+}
+
+.FISIO {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-family: "Play", serif;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 21px;
+    font-weight: 600;
+    color: #6DA884;
+    border: 1px solid #6DA884;
+    width: 275px;
+    height: 53px;
+}
+
+.NUTRI {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    font-family: "Play", serif;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 21px;
+    font-weight: 600;
+    color: #E5AB7F;
+    border: 1px solid #E5AB7F;
     width: 275px;
     height: 53px;
 }
